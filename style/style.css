@@ -16,4 +16,130 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+main {
+  padding: 1.5rem;
+}
+
+main header {
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+main header .circles {
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -1.75rem;
+  width: 10rem;
+}
+
+main header h1 {
+  font-size: 1.5rem;
+  color: #293356;
+}
+
+main header p {
+  color: #858fad;
+  width: 80%;
+}
+
+main .container {
+  border: 1px solid red;
+}
+
+main .container .yearly_monthly_wrapper span {
+  font-size: .8rem;
+  color: #858fad;
+}
+
+main .container .yearly_monthly_wrapper span.discountDesktop {
+  display: none;
+}
+
+main .container .yearly_monthly_wrapper .switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+}
+
+main .container .yearly_monthly_wrapper .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+main .container .yearly_monthly_wrapper .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#6067e6));
+  background: linear-gradient(#a3a8f0, #6067e6);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+main .container .yearly_monthly_wrapper .slider:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bdc1ff), to(#7e85ff));
+  background: linear-gradient(#bdc1ff, #7e85ff);
+}
+
+main .container .yearly_monthly_wrapper .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.75rem;
+  width: 1.75rem;
+  left: .3rem;
+  bottom: .1rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+main .container .yearly_monthly_wrapper input:checked + .slider {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#6067e6));
+  background: linear-gradient(#a3a8f0, #6067e6);
+}
+
+main .container .yearly_monthly_wrapper input:checked + .slider:before {
+  -webkit-transform: translateX(1.65rem);
+          transform: translateX(1.65rem);
+}
+
+main .container .yearly_monthly_wrapper .slider.round {
+  border-radius: 1rem;
+}
+
+main .container .yearly_monthly_wrapper .slider.round:before {
+  border-radius: 50%;
+}
+
+main .monthly {
+  display: none;
+}
+
+main .show_monthly .monthly {
+  display: block;
+}
+
+main .show_monthly .yearly {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

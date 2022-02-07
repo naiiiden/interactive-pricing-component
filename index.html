@@ -8,9 +8,41 @@
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
 <body>
+  <main>
+    <header>
+      <img src="images/pattern-circles.svg" class="circles" alt="">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+    <div id="show" class="container show_monthly">
+      
+      <div class="pageviews_price_container monthly">
+        <input class="monthly" id="range" type="range" min="0" value="2" max="4">
+        <p class="pageviews" id="pageviews"></p>
+        <p class="monthly"><span id="output"></span> / month</p>
+      </div>
+
+
+      <div class="pageviews_price_container yearly">
+        <input class="yearly" id="rangeYearly" type="range" min="0" value="2" max="4">
+        <p class="pageviews" id="pageviewsYearly"></p>
+        <p class="yearly"><span id="outputYearly"></span> / month</p>
+      </div>
+      
+      
+      <div class="yearly_monthly_wrapper">
+        <span>Monthly Billing</span>
+        <label class="switch">
+          <input type="checkbox" name="toggle" id="toggle" unchecked>
+          <span class="slider round"></span>
+        </label>
+        <span>Yearly Billing <span class="discountDesktop">25% discount</span class="discountMobile">25%<span></span></span>
+      </div>
+    </div>
+  </main>
+  
+   
 
   Pageviews
   $ /month
