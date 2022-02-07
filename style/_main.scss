@@ -52,11 +52,11 @@ main {
                 border-radius: 1rem;
                 overflow: hidden;
                 width: 100%;
+                height: 10px;
                 appearance: none;
 
                 &::-webkit-slider-thumb {
-                    -webkit-appearance: none;
-                    // appearance: none;
+                    appearance: none;
                     width: 1rem;
                     height: 1rem;
                     border-radius: 50%;
@@ -75,7 +75,7 @@ main {
                 display: none;
             }
 
-            .pageviewsMobile {
+            .pageviewsMobile, .pageviews {
                 color: $grayish-blue;
                 text-transform: uppercase;
                 font-size: .9rem;
@@ -87,6 +87,7 @@ main {
                 color: $grayish-blue;
                 display: flex;
                 align-items: center;
+                font-weight: 800;
                 gap: .5rem;
                 line-height: 1;
 
@@ -113,7 +114,7 @@ main {
                     display: none;
                 }
 
-                &.discountMobile {
+                &.discountMobile, &.discountDesktop {
                     background: $light-grayish-red;
                     color: $light-red;
                     padding: .3rem .4rem;
@@ -157,7 +158,7 @@ main {
                     height: 1.1rem;
                     width: 1.1rem;
                     left: .2rem;
-                    bottom: .1rem;
+                    bottom: .125rem;
                     background-color: white;
                     transition: .4s;
                 }
@@ -173,7 +174,7 @@ main {
               
               
             input:checked + .slider:before {
-                transform: translateX(1.4rem);
+                transform: translateX(1.55rem);
             }
               
             .slider.round {
@@ -254,6 +255,99 @@ main {
             .yearly_monthly_wrapper {
                 span {
                     font-size: .6rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        gap: 5rem;
+
+        header {
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+
+        .container {
+            width: 35rem;
+            // padding: 2rem;
+
+            .flex_container {
+                flex-direction: column-reverse;
+                padding: 3rem 2rem 0 2rem;
+
+                input[type="range"] {
+                    cursor: pointer;
+                }
+            }
+
+            .pageviews_price_container {
+                .price {
+                    span {
+                        font-size: 2.5rem;
+                    }
+                }
+
+
+                .desktop_container {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .pageviews {
+                    display: block;
+                }
+
+                .pageviewsMobile {
+                    display: none;
+                }
+            }
+
+            .yearly_monthly_wrapper {
+                padding: 2rem 0 1rem 0;
+                gap: 1rem;
+                margin-left: 4.5rem;
+
+                span {
+                    font-size: .9rem;
+
+                    &.discountMobile {
+                        display: none;
+                    }
+
+                    &.discountDesktop {
+                        display: block;
+                    }
+                }
+
+                .yearly_billing {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                }
+            }
+
+            .checkmark_trial_container {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 3rem 2rem;
+
+                .checkmarks {
+                    align-items: flex-start;
+                }
+
+                button {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #fff;
+                        transition: .3s;
+                    }
                 }
             }
         }
