@@ -61,6 +61,35 @@ main .container {
   border: 1px solid red;
 }
 
+main .container .pageviews_price_container .pageviews {
+  display: none;
+}
+
+main .container .pageviews_price_container .pageviewsMobile {
+  color: #858fad;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 1.25px;
+  font-weight: 800;
+}
+
+main .container .pageviews_price_container .price {
+  color: #858fad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+main .container .pageviews_price_container .price span {
+  color: #293356;
+  font-size: .8rem;
+  font-size: 2rem;
+}
+
 main .container .yearly_monthly_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -13,14 +13,19 @@ input.oninput = function(){
     
     if (values[this.value] == 8) {
         pageviews.textContent = "10K pageviews";
+        output.textContent = "$8.00";
     } else if (values[this.value] == 12) {
         pageviews.textContent = "50K pageviews";
+        output.textContent = "$12.00";
     } else if (values[this.value] == 16) {
         pageviews.textContent = "100K pageviews";
+        output.textContent = "$16.00";
     } else if (values[this.value] == 24) {
         pageviews.textContent = "500K pageviews";
+        output.textContent = "$24.00";
     } else if (values[this.value] == 36) {
         pageviews.textContent = "1M pageviews";
+        output.textContent = "$36.00";
     }
 
     if (values[this.value] == 8) {
@@ -48,14 +53,19 @@ inputYearly.oninput = function(){
 
     if (valuesYearly[this.value] == 6) {
         pageviewsYearly.textContent = "10K pageviews";
+        outputYearly.textContent = "$6.00";
     } else if (valuesYearly[this.value] == 9) {
         pageviewsYearly.textContent = "50K pageviews";
+        outputYearly.textContent = "$9.00";
     } else if (valuesYearly[this.value] == 12) {
         pageviewsYearly.textContent = "100K pageviews";
+        outputYearly.textContent = "$12.00";
     } else if (valuesYearly[this.value] == 18) {
         pageviewsYearly.textContent = "500K pageviews";
+        outputYearly.textContent = "$18.00";
     } else if (valuesYearly[this.value] == 27) {
         pageviewsYearly.textContent = "1M pageviews";
+        outputYearly.textContent = "$27.00";
     }
 
     if (valuesYearly[this.value] == 6) {
