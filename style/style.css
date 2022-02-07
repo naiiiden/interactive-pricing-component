@@ -61,8 +61,21 @@ main .container {
   border: 1px solid red;
 }
 
+main .container .yearly_monthly_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .5rem;
+}
+
 main .container .yearly_monthly_wrapper span {
-  font-size: .8rem;
+  font-size: .7rem;
   color: #858fad;
 }
 
@@ -70,11 +83,20 @@ main .container .yearly_monthly_wrapper span.discountDesktop {
   display: none;
 }
 
+main .container .yearly_monthly_wrapper span.discountMobile {
+  background: #feece7;
+  color: #ff8c66;
+  padding: .3rem .4rem;
+  border-radius: 2rem;
+  font-size: .7rem;
+  font-weight: 800;
+}
+
 main .container .yearly_monthly_wrapper .switch {
   position: relative;
   display: inline-block;
-  width: 4rem;
-  height: 2rem;
+  width: 3rem;
+  height: 1.35rem;
 }
 
 main .container .yearly_monthly_wrapper .switch input {
@@ -90,23 +112,21 @@ main .container .yearly_monthly_wrapper .slider {
   left: 0;
   right: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#6067e6));
-  background: linear-gradient(#a3a8f0, #6067e6);
+  background: #cdd7ee;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 main .container .yearly_monthly_wrapper .slider:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bdc1ff), to(#7e85ff));
-  background: linear-gradient(#bdc1ff, #7e85ff);
+  background: #10d5c2;
 }
 
 main .container .yearly_monthly_wrapper .slider:before {
   position: absolute;
   content: "";
-  height: 1.75rem;
-  width: 1.75rem;
-  left: .3rem;
+  height: 1.1rem;
+  width: 1.1rem;
+  left: .2rem;
   bottom: .1rem;
   background-color: white;
   -webkit-transition: .4s;
@@ -114,13 +134,16 @@ main .container .yearly_monthly_wrapper .slider:before {
 }
 
 main .container .yearly_monthly_wrapper input:checked + .slider {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#6067e6));
-  background: linear-gradient(#a3a8f0, #6067e6);
+  background: #cdd7ee;
+}
+
+main .container .yearly_monthly_wrapper input:checked + .slider:hover {
+  background: #10d5c2;
 }
 
 main .container .yearly_monthly_wrapper input:checked + .slider:before {
-  -webkit-transform: translateX(1.65rem);
-          transform: translateX(1.65rem);
+  -webkit-transform: translateX(1.4rem);
+          transform: translateX(1.4rem);
 }
 
 main .container .yearly_monthly_wrapper .slider.round {
@@ -135,11 +158,23 @@ main .monthly {
   display: none;
 }
 
+main .yearly_billing {
+  font-weight: 800;
+}
+
 main .show_monthly .monthly {
   display: block;
 }
 
+main .show_monthly .monthly_billing {
+  font-weight: 800;
+}
+
 main .show_monthly .yearly {
   display: none;
+}
+
+main .show_monthly .yearly_billing {
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */

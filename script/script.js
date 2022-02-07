@@ -6,6 +6,7 @@ const values = [8, 12, 16, 24, 36];
 const input = document.getElementById("range");
 const output = document.getElementById("output");
 const pageviews = document.getElementById("pageviews");
+const pageviewsMobile = document.getElementById("pageviewsMobile");
 
 input.oninput = function(){
     output.textContent = values[this.value];
@@ -21,6 +22,18 @@ input.oninput = function(){
     } else if (values[this.value] == 36) {
         pageviews.textContent = "1M pageviews";
     }
+
+    if (values[this.value] == 8) {
+        pageviewsMobile.textContent = "10K pageviews";
+    } else if (values[this.value] == 12) {
+        pageviewsMobile.textContent = "50K pageviews";
+    } else if (values[this.value] == 16) {
+        pageviewsMobile.textContent = "100K pageviews";
+    } else if (values[this.value] == 24) {
+        pageviewsMobile.textContent = "500K pageviews";
+    } else if (values[this.value] == 36) {
+        pageviewsMobile.textContent = "1M pageviews";
+    }
 };
 input.oninput();
 
@@ -28,6 +41,7 @@ const valuesYearly = [6, 9, 12, 18, 27];
 const inputYearly = document.getElementById("rangeYearly");
 const outputYearly = document.getElementById("outputYearly");
 const pageviewsYearly = document.getElementById("pageviewsYearly");
+const pageviewsYearlyMobile = document.getElementById("pageviewsYearlyMobile");
 
 inputYearly.oninput = function(){
     outputYearly.textContent = valuesYearly[this.value];
@@ -42,6 +56,18 @@ inputYearly.oninput = function(){
         pageviewsYearly.textContent = "500K pageviews";
     } else if (valuesYearly[this.value] == 27) {
         pageviewsYearly.textContent = "1M pageviews";
+    }
+
+    if (valuesYearly[this.value] == 6) {
+        pageviewsYearlyMobile.textContent = "10K pageviews";
+    } else if (valuesYearly[this.value] == 9) {
+        pageviewsYearlyMobile.textContent = "50K pageviews";
+    } else if (valuesYearly[this.value] == 12) {
+        pageviewsYearlyMobile.textContent = "100K pageviews";
+    } else if (valuesYearly[this.value] == 18) {
+        pageviewsYearlyMobile.textContent = "500K pageviews";
+    } else if (valuesYearly[this.value] == 27) {
+        pageviewsYearlyMobile.textContent = "1M pageviews";
     }
 };
 inputYearly.oninput();
