@@ -22,6 +22,12 @@ body {
     width: 100%;
     min-height: 100vh;
     font-family: Manrope, sans-serif;
+    background: $very-pale-blue;
+    background-image: url("../images/bg-pattern.svg");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
 }
 
 img {

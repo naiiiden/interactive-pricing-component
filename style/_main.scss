@@ -1,5 +1,8 @@
 main {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 
     header {
         position: relative;
@@ -31,7 +34,41 @@ main {
     }
 
     .container {
-        border: 1px solid red;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .flex_container {
+            padding: 1rem 1rem 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+
+            #range, #rangeYearly {
+                border-radius: 1rem;
+                overflow: hidden;
+                width: 100%;
+                appearance: none;
+
+                &::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    // appearance: none;
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    background: #fff;
+                    background-image: url("../images/icon-slider.svg");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+                    box-shadow: -307px 0 0 300px $soft-cyan;
+                }
+            }
+        }
 
         .pageviews_price_container {
             .pageviews {
@@ -51,6 +88,7 @@ main {
                 display: flex;
                 align-items: center;
                 gap: .5rem;
+                line-height: 1;
 
                 span {
                     color: $dark-desaturated-blue;
@@ -61,6 +99,7 @@ main {
         }
 
         .yearly_monthly_wrapper {
+            padding: 0 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -169,6 +208,54 @@ main {
 
         .yearly_billing {
             font-weight: normal;
+        }
+    }
+
+    .checkmark_trial_container {
+        border-top: 1px solid $light-grayish-red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        
+        .checkmarks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .checkmark {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+                p {
+                    font-size: .9rem;
+                    color: $grayish-blue;
+                }
+            }
+        }
+
+        button {
+            background: $dark-desaturated-blue;
+            border: none;
+            border-radius: 2rem;
+            padding: 1rem 2rem;
+            font-family: inherit;
+            color: $pale-blue;
+        }
+    }
+}
+
+@media screen and (max-width: 374px) {
+    main {
+        .container {
+            .yearly_monthly_wrapper {
+                span {
+                    font-size: .6rem;
+                }
+            }
         }
     }
 }

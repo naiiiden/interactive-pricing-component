@@ -16,23 +16,22 @@
     </header>
 
     <div id="show" class="container show_monthly">
-      
       <div class="pageviews_price_container monthly">
-        <p class="pageviewsMobile" id="pageviewsMobile"></p>
-        <input class="monthly" id="range" type="range" min="0" value="2" max="4">
-        <p class="pageviews" id="pageviews"></p>
-        <p class="monthly price"><span id="output"></span> / month</p>
+        <div class="flex_container">
+          <p class="pageviewsMobile" id="pageviewsMobile"></p>
+          <input class="monthly" class="range" id="range" type="range" min="0" value="2" max="4">
+          <p class="pageviews" id="pageviews"></p>
+          <p class="monthly price"><span id="output"></span> / month</p>
+        </div>
       </div>
-
-
       <div class="pageviews_price_container yearly">
-        <p class="pageviewsMobile" id="pageviewsYearlyMobile"></p>
-        <input class="yearly" id="rangeYearly" type="range" min="0" value="2" max="4">
-        <p class="pageviews" id="pageviewsYearly"></p>
-        <p class="yearly price"><span id="outputYearly"></span> / month</p>
+        <div class="flex_container">
+          <p class="pageviewsMobile" id="pageviewsYearlyMobile"></p>
+          <input class="yearly" class="range" id="rangeYearly" type="range" min="0" value="2" max="4">
+          <p class="pageviews" id="pageviewsYearly"></p>
+          <p class="yearly price"><span id="outputYearly"></span> / month</p>
+        </div>
       </div>
-      
-      
       <div class="yearly_monthly_wrapper">
         <span class="monthly_billing">Monthly Billing</span>
         <label class="switch">
@@ -41,22 +40,32 @@
         </label>
         <span class="yearly_billing">Yearly Billing <span class="discountDesktop">25% discount</span><span class="discountMobile">-25%</span></span>
       </div>
+      <div class="checkmark_trial_container">
+        <div class="checkmarks">
+          <div class="checkmark">
+            <img src="images/icon-check.svg" alt="">
+            <p>Unlimited websites</p>
+          </div>
+          <div class="checkmark">
+            <img src="images/icon-check.svg" alt="">
+            <p>100% data ownership</p>
+          </div>
+          <div class="checkmark">
+            <img src="images/icon-check.svg" alt="">
+            <p>Email reports</p>
+          </div>
+        </div>
+        <button>Start my trial</button>
+      </div>
     </div>
   </main>
+
+
   
-   
+  
+  
 
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
+  
   <script src="script/script.js"></script>
 </body>
 </html>

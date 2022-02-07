@@ -10,6 +10,13 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Manrope, sans-serif;
+  background: #fafbff;
+  background-image: url("../images/bg-pattern.svg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 
 img {
@@ -19,6 +26,14 @@ img {
 
 main {
   padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
 }
 
 main header {
@@ -58,7 +73,56 @@ main header p {
 }
 
 main .container {
-  border: 1px solid red;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+main .container .flex_container {
+  padding: 1rem 1rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+main .container .flex_container #range, main .container .flex_container #rangeYearly {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main .container .flex_container #range::-webkit-slider-thumb, main .container .flex_container #rangeYearly::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  background-image: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  -webkit-box-shadow: -307px 0 0 300px #a5f3eb;
+          box-shadow: -307px 0 0 300px #a5f3eb;
 }
 
 main .container .pageviews_price_container .pageviews {
@@ -82,6 +146,7 @@ main .container .pageviews_price_container .price {
       -ms-flex-align: center;
           align-items: center;
   gap: .5rem;
+  line-height: 1;
 }
 
 main .container .pageviews_price_container .price span {
@@ -91,6 +156,7 @@ main .container .pageviews_price_container .price span {
 }
 
 main .container .yearly_monthly_wrapper {
+  padding: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,5 +271,65 @@ main .show_monthly .yearly {
 
 main .show_monthly .yearly_billing {
   font-weight: normal;
+}
+
+main .checkmark_trial_container {
+  border-top: 1px solid #feece7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+main .checkmark_trial_container .checkmarks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+main .checkmark_trial_container .checkmarks .checkmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+main .checkmark_trial_container .checkmarks .checkmark p {
+  font-size: .9rem;
+  color: #858fad;
+}
+
+main .checkmark_trial_container button {
+  background: #293356;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  color: #bdccff;
+}
+
+@media screen and (max-width: 374px) {
+  main .container .yearly_monthly_wrapper span {
+    font-size: .6rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
