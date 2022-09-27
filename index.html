@@ -18,28 +18,28 @@
     <div id="show" class="container show_monthly">
       <div class="pageviews_price_container monthly">
         <div class="flex_container">
-          <p class="pageviewsMobile" id="pageviewsMobile"></p>
+          <p class="pageviewsMobile" id="pageviewsMobile" aria-live="polite"></p>
           <input class="monthly" class="range" id="range" type="range" min="0" value="2" max="4" aria-label="Monthly pageviews">
           <div class="desktop_container">
-            <p class="pageviews" id="pageviews"></p>
-            <p class="monthly price"><span id="output"></span> / month</p>
+            <p class="pageviews" id="pageviews" aria-live="polite"></p>
+            <p class="monthly price" aria-live="polite"><span id="output"></span> / month</p>
           </div>
         </div>
       </div>
       <div class="pageviews_price_container yearly">
         <div class="flex_container">
-          <p class="pageviewsMobile" id="pageviewsYearlyMobile"></p>
+          <p class="pageviewsMobile" id="pageviewsYearlyMobile" aria-live="polite"></p>
           <input class="yearly" class="range" id="rangeYearly" type="range" min="0" value="2" max="4" aria-label="Yearly pageviews">
           <div class="desktop_container">
-            <p class="pageviews" id="pageviewsYearly"></p>
-            <p class="yearly price"><span id="outputYearly"></span> / month</p>
+            <p class="pageviews" id="pageviewsYearly" aria-live="polite"></p>
+            <p class="yearly price" aria-live="polite"><span id="outputYearly"></span> / month</p>
           </div>
         </div>
       </div>
       <div class="yearly_monthly_wrapper">
         <span class="monthly_billing">Monthly Billing</span>
         <label class="switch" for="toggle">
-          <span class="sr-only-label">Monthly billing</span>
+          <span class="sr-only-label" aria-live="polite">Monthly billing</span>
           <input type="checkbox" name="toggle" id="toggle" unchecked>
           <span class="slider round"></span>
         </label>
