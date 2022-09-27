@@ -1,5 +1,10 @@
 document.getElementById("toggle").addEventListener("click", () => {
     document.getElementById("show").classList.toggle("show_monthly");
+    if (document.querySelector("#toggle").ariaLabel == "Monthly billing") {
+        document.querySelector("#toggle").ariaLabel = "Yearly billing";
+    } else {
+        document.querySelector("#toggle").ariaLabel = "Monthly billing";
+    }
 });
 
 const values = [8, 12, 16, 24, 36];
