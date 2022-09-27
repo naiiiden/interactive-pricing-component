@@ -106,14 +106,14 @@ main .container .pageviews_price_container .pageviews {
   display: none;
 }
 main .container .pageviews_price_container .pageviewsMobile, main .container .pageviews_price_container .pageviews {
-  color: hsl(225deg, 20%, 60%);
+  color: #505777;
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 1.25px;
   font-weight: 800;
 }
 main .container .pageviews_price_container .price {
-  color: hsl(225deg, 20%, 60%);
+  color: #505777;
   display: flex;
   align-items: center;
   font-weight: 800;
@@ -134,14 +134,14 @@ main .container .yearly_monthly_wrapper {
 }
 main .container .yearly_monthly_wrapper span {
   font-size: 0.7rem;
-  color: hsl(225deg, 20%, 60%);
+  color: #505777;
 }
 main .container .yearly_monthly_wrapper span.discountDesktop {
   display: none;
 }
 main .container .yearly_monthly_wrapper span.discountMobile, main .container .yearly_monthly_wrapper span.discountDesktop {
   background: hsl(14deg, 92%, 95%);
-  color: hsl(15deg, 100%, 70%);
+  color: #CC3300;
   padding: 0.3rem 0.4rem;
   border-radius: 2rem;
   font-size: 0.7rem;
@@ -235,7 +235,7 @@ main .checkmark_trial_container .checkmarks .checkmark {
 }
 main .checkmark_trial_container .checkmarks .checkmark p {
   font-size: 0.9rem;
-  color: hsl(225deg, 20%, 60%);
+  color: #505777;
 }
 main .checkmark_trial_container button {
   background: hsl(227deg, 35%, 25%);
